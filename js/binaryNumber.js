@@ -21,7 +21,7 @@ function readLine() {
 }
 
 
-// binary number
+// binary number double
 function main() {
     var n = parseInt(readLine().trim(), 10);
     
