@@ -36,7 +36,7 @@ function factorial(n) {
     }
     return n * factorial(n-1);
 }
-
+// recursion variable
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
