@@ -38,6 +38,7 @@ function vowelsAndConsonants(s) {
         }
     }
     //console.log(vol)
+    //loop
     for(let el of vol){
         console.log(el);
     }
