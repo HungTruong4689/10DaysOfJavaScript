@@ -21,7 +21,7 @@ function readLine() {
 }
 
 
-
+// create the conditional
 function main() {
     const N = parseInt(readLine().trim(), 10);
     if(N%2 ==1){
