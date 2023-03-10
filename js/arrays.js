@@ -45,6 +45,7 @@ function getSecondLargest(nums) {
 }
 
 
+//create new arrays
 function main() {
     const n = +(readLine());
     const nums = readLine().split(' ').map(Number);
