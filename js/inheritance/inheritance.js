@@ -47,7 +47,7 @@ class Student extends Person {
 
         this.scores = scores;
     }
-
+    //inheritance
     calculate() {
         const average = this.scores.reduce((target, score) => { return target + score }) / this.scores.length;
 
