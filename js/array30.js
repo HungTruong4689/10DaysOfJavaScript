@@ -28,7 +28,7 @@ function main() {
     const arr = readLine().replace(/\s+$/g, '').split(' ').map(arrTemp => parseInt(arrTemp, 10));
     
     var result = "";
-    
+    //pending variable
     for (var i = n - 1; i > -1; i--)
         {
             result = result + arr[i] + " ";
