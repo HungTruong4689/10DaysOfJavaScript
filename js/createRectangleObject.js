@@ -36,7 +36,7 @@ function Rectangle(a, b) {
     
 }
 
-// create the new rectangle object
+// create the new rectangle object with constructor
 function main() {
     const a = +(readLine());
     const b = +(readLine());
