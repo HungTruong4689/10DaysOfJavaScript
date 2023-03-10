@@ -33,7 +33,7 @@ function factorial(n){
     }
     return result;
 }
-
+// create a function of the object
 function main() {
     const n = +(readLine());
     

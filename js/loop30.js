@@ -20,7 +20,7 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-
+//loop over 30 
 
 function main() {
     const n = parseInt(readLine().trim(), 10);

@@ -22,6 +22,8 @@ function readLine() {
     return inputString[currentLine++];
 }
 
+
+//if else conditional
 function getGrade(score) {
     let grade;
     // Write your code here

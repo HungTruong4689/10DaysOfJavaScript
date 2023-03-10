@@ -21,7 +21,7 @@ function readLine() {
 }
 
 
-
+//set line of array
 function main() {
     const n = parseInt(readLine().trim(), 10);
 

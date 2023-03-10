@@ -45,6 +45,7 @@ function getArea(length, width) {
 *   
 *	Return a number denoting the perimeter of a rectangle.
 **/
+//arithmetic method
 function getPerimeter(length, width) {
     let perimeter;
     // Write your code here

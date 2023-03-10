@@ -36,7 +36,7 @@ function getCount(objects) {
   }, 0);
 }
 
-
+//how to increase the object
 function main() {
     const n = +(readLine());
     let objects = [];
