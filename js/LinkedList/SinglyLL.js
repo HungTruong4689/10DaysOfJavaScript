@@ -70,6 +70,16 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
+    get(index){
+        if(index <0 || index >= this.length) return null;
+        var counter =0;
+        var current = this.head;
+        while(counter !== 0){
+            current = current.next;
+            counter++;
+        }
+        return current;
+    }
 }
 
 // var first = new Node("Hi");
