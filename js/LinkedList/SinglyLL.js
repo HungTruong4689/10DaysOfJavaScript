@@ -23,6 +23,13 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
+    traverse(){
+        var current = this.head;
+        while(current){
+            console.log(current.val);
+            current = current.next;
+        }
+    }
     
 }
 
