@@ -109,6 +109,15 @@ class SinglyLinkedList{
         previousNode.next = removed.next;
         return removed;
     }
+    print(){
+        var arr =[0];
+        var current = this.head
+        while(current){
+            arr.push(current.val)
+            current = current.next;
+        }
+        console.log(arr)
+    }
 }
 
 // var first = new Node("Hi");
