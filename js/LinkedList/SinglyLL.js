@@ -118,6 +118,19 @@ class SinglyLinkedList{
         }
         console.log(arr)
     }
+    reverse(){
+        var node = this.head;
+        this.head = this.tail;
+        this.tail = node;
+        var next;
+        var prev = null;
+        for(var i =0; i<this.length;i++){
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+    }
 }
 
 // var first = new Node("Hi");
