@@ -63,4 +63,15 @@ class BinarySearchTree{
         }
         return data;
     }
+    DFSPreOrder(){
+        var data = [];
+        var current = this.root;
+        function traverse(node){
+            data.push(node);
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+        }
+        traverse(current);
+        return data
+    }
 }
