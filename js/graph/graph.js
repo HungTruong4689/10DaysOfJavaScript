@@ -10,3 +10,8 @@ class Graph{
         this.adjacencyList[v2].push(v1);
     }
 }
+
+let g = new Graph();
+g.addVertex("Dallas");
+g.addVertex("Tokyo");
+g.addVertex("Aspen");
