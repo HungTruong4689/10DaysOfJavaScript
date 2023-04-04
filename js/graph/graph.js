@@ -1,5 +1,7 @@
 class Graph{
-    
+    constructor(){
+        this.adjecencyList = {};
+    }
 }
 
 let g = new Graph();
