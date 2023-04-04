@@ -5,6 +5,10 @@ class Graph{
     addVertex(vertex){
         if(!this.adjecencyList[vertex] ) this.adjecencyList[vertex] = [];
     }
+    addEdge(v1,v2){
+        this.adjecencyList[v1].push(v2);
+        this.adjecencyList[v2].push(v1);
+    }
 }
 
 let g = new Graph();
