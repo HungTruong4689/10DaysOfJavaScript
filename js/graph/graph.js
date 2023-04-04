@@ -9,6 +9,10 @@ class Graph{
         this.adjecencyList[v1].push(v2);
         this.adjecencyList[v2].push(v1);
     }
+    removeEdge(vertex1,vertex2){
+        this.adjecencyList[vertex1] = this.adjecencyList[vertex1].filter(v => v !== vertex2);
+        this.adjecencyList[vertex2] = this.adjecencyList[vertex2].filter(v => v !== vertex1);
+    }
 }
 
 let g = new Graph();
