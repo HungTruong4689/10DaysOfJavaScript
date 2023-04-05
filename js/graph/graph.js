@@ -20,6 +20,10 @@ class Graph{
         }
         delete this.adjecencyList[vertex];
     }
+    depthFirstRecursive(start){
+        const result = [];
+        const visited = {}
+    }
 }
 
 let g = new Graph();
