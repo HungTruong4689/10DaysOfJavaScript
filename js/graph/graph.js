@@ -23,6 +23,10 @@ class Graph{
     depthFirstRecursive(start){
         const result = [];
         const visited = {}
+
+        (function dfs(vertex){
+            if(!vertex) return null;
+        })(start)
     }
 }
 
