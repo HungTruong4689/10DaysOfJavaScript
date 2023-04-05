@@ -37,6 +37,26 @@ class Graph{
         })(start)
         return result;
     }
+    depthFirstIterative(start){
+        const stack = [start];
+        const result = [];
+        const visited = {};
+        let currentVertex;
+
+        visited[start] = true;
+        while(stack.length){
+            currentVertex = stack.pop();
+            result.push(currentVertex);
+
+            this.adjecencyList[currentVertex].forEach(neighbor =>{
+                if(!visited[neighbor]){
+                    visited[neighbor] = true;
+                }
+            })
+        }
+
+        return result;
+    }
 }
 
 let g = new Graph();
