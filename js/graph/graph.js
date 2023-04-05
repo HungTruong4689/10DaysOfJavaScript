@@ -68,7 +68,7 @@ class Graph{
             currentVertex = queue.shift();
             result.push(currentVertex);
 
-            this.adjecencyList[currentVertex].forEach(neighbor =>{
+            this.adjecencyList[currentVertex].slice().reverse().forEach(neighbor =>{
                 if(!visited[neighbor]){
                     visited[neighbor] = true;
                     queue.push(neighbor);
