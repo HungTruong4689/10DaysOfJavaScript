@@ -22,11 +22,20 @@ class Graph{
     }
     depthFirstRecursive(start){
         const result = [];
-        const visited = {}
+        const visited = {};
+        const adjecencyList = this.adjecencyList;
 
         (function dfs(vertex){
             if(!vertex) return null;
+            visited[vertex] = true;
+            result.push(vertex);
+            adjecencyList[vertex].forEach(neighbor => {
+                if(!this.visited[neighbor]){
+                    return dfs(neighbor);
+                }
+            });
         })(start)
+        return result;
     }
 }
 
