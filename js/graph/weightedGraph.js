@@ -3,6 +3,7 @@ class WeightedGraph{
         this.adjacencyList = {};
 
     }
+    // add vertex as usual
     addVertex(vertex){
         if(!this.adjecencyList[vertex] ) this.adjecencyList[vertex] = [];
     }
